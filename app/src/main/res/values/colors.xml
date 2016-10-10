@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00bad2</color>
+    <color name="colorPrimaryDark">#0288D1</color>
+    <color name="colorAccent">#00BCD4</color>
+    <color name="mainBackground">#b3cebb</color>
+    <color name="menuBarBackground">#e2aac6</color>
+    <color name="reminderTextColor">#ffa64d</color>
+
+
+    <color name="mainmenu1Primary">#F8BBD0</color>
+    <color name="mainmenu1secondery">#EC407A</color>
+    <color name="mainmenu2Primary">#D1C4E9</color>
+    <color name="mainmenu2secondery">#7E57C2</color>
+    <color name="mainmenu3Primary">#C5CAE9</color>
+    <color name="mainmenu3secondery">#5C6BC0</color>
+    <color name="mainmenu4Primary">#B2EBF2</color>
+    <color name="mainmenu4secondery">#26C6DA</color>
+    <color name="mainmenu5Primary">#B2DFDB</color>
+    <color name="mainmenu5secondery">#26A69A</color>
+    <color name="mainmenu6Primary">#FFCCBC</color>
+    <color name="mainmenu6secondery">#FF7043</color>
+    <color name="mainmenu7Primary">#FFE0B2</color>
+    <color name="mainmenu7secondery">#FFCA28</color>
+
+
+    <color name="menuTextBackground">#fff</color>
+
+
+    <color name="background1">#FCE4EC</color>
+    <color name="background1Text">#880E4F</color>
+    <color name="background2">#E91E63</color>
+    <color name="background2Text">#ffffff</color>
+    <color name="background3">#fe5d91</color>
+    <color name="background4">#ace03d</color>
+    <color name="background5">#fff478</color>
+</resources>

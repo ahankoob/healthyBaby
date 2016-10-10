@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/top_bar_holder"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/top_bar_holder_height"
+    android:padding="5dp"
+    android:background="@drawable/profile_background_tiles">
+
+
+    <com.beardedhen.androidbootstrap.BootstrapCircleThumbnail
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image_drawer"
+        android:layout_width="@dimen/profile_image_dimen"
+        android:layout_height="@dimen/profile_image_dimen"
+        app:bootstrapBrand="info"
+        app:hasBorder="true"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"></com.beardedhen.androidbootstrap.BootstrapCircleThumbnail>
+
+
+</RelativeLayout>

@@ -1,0 +1,200 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dialogs.babyForm">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/top_bar_holder1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/profile_image_dimen_small"
+        android:padding="5dp"
+        android:layoutDirection="rtl"
+        android:background="@color/mainmenu7secondery">
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            style="@style/wrapping_button"
+            android:width="100dp"
+            android:height="50dp"
+            android:id="@+id/returnBTN"
+            android:layout_centerVertical="true"
+            android:text="بازگشت"
+            app:bootstrapBrand="primary"
+            app:roundedCorners="true"
+            />
+    </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/mainmenu5Primary"
+            android:textDirection="rtl">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="@string/babyName"
+                android:gravity="right"
+                android:padding="10dp"
+
+                />
+
+            <EditText
+                android:id="@+id/babyname"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="15dp"
+                android:layout_centerVertical="true"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:ellipsize="start"
+                android:gravity="center"
+                android:hint="@string/babyName"
+                android:inputType="text"
+                android:background="@drawable/edit_text_style"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="@string/babygender"
+                android:gravity="right"
+                android:padding="10dp"
+
+                />
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/gender"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textAlignment="center"
+            >
+            <RadioButton
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:textAlignment="center"
+                android:text="دختر"
+                android:id="@+id/isGirl"
+                android:background="@drawable/radio_button_style"
+                />
+            <RadioButton
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:textAlignment="center"
+                android:id="@+id/isBoy"
+                android:text="‍‍پسر"
+                android:background="@drawable/radio_button_style"/>
+        </RadioGroup>
+            <com.beardedhen.androidbootstrap.AwesomeTextView
+                style="@style/wrapping_fa_text"
+                app:bootstrapBrand="success"
+                app:bootstrapText="{fa_android}{fa-bluetooth}{fa_apple}"
+                app:fontAwesomeIcon="fa_android"
+                />
+
+            <com.beardedhen.androidbootstrap.AwesomeTextView
+                style="@style/wrapping_fa_text"
+                app:bootstrapBrand="warning"
+                app:bootstrapText="{fa_user} {fa_user_md} {fa_users} {fa_user_plus}"
+                />
+            <com.beardedhen.androidbootstrap.BootstrapEditText
+                android:id="@+id/bedit_text_change_size"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                app:bootstrapSize="md"
+                app:bootstrapBrand="info"
+                />
+            <com.beardedhen.androidbootstrap.BootstrapButtonGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/micro_padding"
+                android:orientation="horizontal"
+                app:bootstrapBrand="success"
+                app:buttonMode="radio"
+                >
+
+                <com.beardedhen.androidbootstrap.BootstrapButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    />
+
+                <com.beardedhen.androidbootstrap.BootstrapButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2"
+                    />
+
+                <com.beardedhen.androidbootstrap.BootstrapButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3"
+                    />
+            </com.beardedhen.androidbootstrap.BootstrapButtonGroup>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="@string/babyBirthDate"
+                android:gravity="right"
+                android:padding="10dp"
+
+                />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:textDirection="rtl">
+
+            <com.FontAwesome.Example.ButtonAwesome
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:id="@+id/showDateSelectorBTN"
+                android:text="@string/fa_calendar"
+                android:layout_marginTop="15dp"
+                />
+
+            <EditText
+                android:id="@+id/birthdateText"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="15dp"
+                android:layout_centerVertical="true"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:ellipsize="start"
+                android:gravity="center"
+                android:hint="@string/babyBirthDate"
+                android:inputType="text"
+                android:background="@drawable/edit_text_style"/>
+        </LinearLayout>
+
+            <com.dd.processbutton.iml.ActionProcessButton
+                xmlns:custom="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/btnSignIn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="ثبت"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                custom:pb_colorComplete="@color/mainmenu4secondery"
+                custom:pb_colorNormal="@color/blue_normal"
+                custom:pb_colorPressed="@color/mainmenu7secondery"
+                custom:pb_colorProgress="@color/mainmenu4secondery"
+                custom:pb_textComplete="ثبت شد"
+                custom:pb_textProgress="انتظار" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

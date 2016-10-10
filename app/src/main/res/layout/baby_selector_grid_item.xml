@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <com.beardedhen.androidbootstrap.BootstrapCircleThumbnail
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:bootstrapBrand="regular"
+
+        app:hasBorder="true"
+        android:id="@+id/profileIMG"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"></com.beardedhen.androidbootstrap.BootstrapCircleThumbnail>
+
+    <com.ariansoft.healthybaby.classes.MyTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/babyName"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/background1Text"/>
+
+    <com.ariansoft.healthybaby.classes.MyTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/babyAge"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/background2"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:id="@+id/babyID"/>
+
+</LinearLayout>

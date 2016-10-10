@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:padding="5dp"
+    android:id="@+id/daruList">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/daruNameContainer"
+        android:layoutDirection="rtl"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentRight="true">
+    <com.beardedhen.androidbootstrap.BootstrapCircleThumbnail
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/daruIMG"
+        app:bootstrapBrand="info"
+        app:hasBorder="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textDirection="rtl"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:textColor="@color/reminderTextColor"
+        android:textSize="@dimen/font_size1"
+        android:id="@+id/daruName"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/daruIMG"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="5dp" />
+        </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@id/daruNameContainer"
+        android:layoutDirection="rtl"
+        android:layout_marginRight="5dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textDirection="rtl"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Large Text"
+            android:id="@+id/daruTimeLeft"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/font_size2"
+            android:layout_above="@+id/reminderUsage"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Small Text"
+            android:textDirection="rtl"
+            android:textColor="#000"
+            android:id="@+id/reminderUsage"
+            android:textSize="@dimen/font_size3"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium Text"
+            android:textDirection="rtl"
+            android:textColor="#aeaeae"
+            android:id="@+id/daruLastUse"
+            android:textSize="@dimen/font_size4"
+
+            android:layout_below="@+id/reminderUsage"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

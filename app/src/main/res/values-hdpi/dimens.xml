@@ -1,0 +1,13 @@
+<resources>
+
+    <dimen name="top_bar_holder_height">170dp</dimen>
+    <dimen name="menu_bar_holder_height">120dp</dimen>
+    <dimen name="profile_image_dimen">115dp</dimen>
+    <dimen name="font_size1">20sp</dimen>
+    <dimen name="font_size2">18sp</dimen>
+    <dimen name="font_size3">14sp</dimen>
+    <dimen name="font_size4">10sp</dimen>
+
+    <dimen name="profileImageMarginRight">20dp</dimen>
+
+</resources>

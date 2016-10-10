@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".Activities.register">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:layoutDirection="rtl"
+        >
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/menu_bar_holder_height"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            android:layoutDirection="ltr"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp">
+                <com.beardedhen.androidbootstrap.BootstrapCircleThumbnail
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    app:bootstrapBrand="info"
+                    app:hasBorder="true"
+                    android:id="@+id/profileIMG"
+
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Large Text"
+                    android:id="@+id/babyName"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Small Text"
+                    android:id="@+id/babyAge"
+                    android:layout_below="@+id/babyName"
+                    android:layout_centerHorizontal="true"/>
+                <com.beardedhen.androidbootstrap.BootstrapButton
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:id="@+id/changeBabyBTN"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:text="تغییر کودک"
+                android:drawableRight="@drawable/ic_cached_white_24dp"/>
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TabLayoutStyle"
+            android:gravity="right"
+            app:tabGravity="fill"
+            app:tabMode="fixed"
+            android:layoutDirection="ltr"
+            />
+
+    </android.support.design.widget.AppBarLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        />
+    <include layout="@layout/content_home" />
+
+
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,148 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:float="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ariansoft.healthybaby.Fragments.newDaruForm">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/top_bar_holder1"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/profile_image_dimen_small"
+            android:padding="5dp"
+            android:background="@color/mainmenu7secondery">
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image"
+                android:layout_width="@dimen/profile_image_dimen_small"
+                android:layout_height="@dimen/profile_image_dimen_small"
+                android:src="@drawable/baby1"
+                app:civ_border_width="1dp"
+                app:civ_border_color="#FFffffff"
+                android:layout_alignParentTop="true"                  android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="@dimen/profileImageMarginRight"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:id="@+id/babyName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="آرین آهنکوب"
+                android:layout_below="@+id/toolbar"
+                android:layout_toLeftOf="@+id/profile_image"
+                android:layout_toStartOf="@+id/profile_image"
+                android:textAppearance="?attr/textAppearanceLargePopupMenu"
+                android:textSize="16dp"
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/babyAge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="16 روز"
+                android:textSize="12dp"
+                android:layout_below="@+id/babyName"
+                android:layout_alignRight="@+id/babyName"
+                android:layout_alignEnd="@+id/babyName" />
+
+            <com.FontAwesome.Example.TextAwesome
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fa_refresh"
+                android:layout_marginLeft="32dp"
+                android:layout_marginStart="32dp"
+                android:id="@+id/view"
+                android:layout_alignTop="@+id/view2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+            <com.FontAwesome.Example.TextAwesome
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fa_plus"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/view"
+                android:layout_toEndOf="@+id/view"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:id="@+id/view2" />
+            <com.FontAwesome.Example.TextAwesome
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fa_edit"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/view2"
+                android:layout_toEndOf="@+id/view2"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:id="@+id/view3" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/top_bar_holder"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/page_top_bar_holder_height"
+            android:background="@color/mainmenu6secondery"
+            >
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/icon_daru"
+                android:layout_width="@dimen/pages_icon_image"
+                android:layout_height="@dimen/pages_icon_image"
+                android:src="@drawable/icon3"
+                app:civ_border_width="1dp"
+                app:civ_border_color="#FFffffff"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="@dimen/profileImageMarginRight"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Large Text"
+                android:id="@+id/textView2"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:id="@+id/daruName"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:hint="@string/daruName"/>
+        <Spinner
+            android:id="@+id/daruType1"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:hint="@string/daruType"
+            android:layout_below="@id/daruName">
+
+        </Spinner>
+        <TimePicker
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:timePickerMode="clock"></TimePicker>
+        <NumberPicker
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:id="@+id/stepHour"/>
+        <NumberPicker
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:id="@+id/stepMin"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/daruSave"
+        android:text="ذخیره"/>
+    </LinearLayout>
+
+                </FrameLayout>

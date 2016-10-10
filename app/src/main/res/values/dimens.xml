@@ -1,0 +1,39 @@
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="app_bar_height">300dp</dimen>
+    <dimen name="expanded_toolbar_title_margin_start">64dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="top_bar_holder_height">300dp</dimen>
+    <dimen name="page_top_bar_holder_height">150dp</dimen>
+    <dimen name="menu_bar_holder_height">120dp</dimen>
+    <dimen name="profile_image_dimen">115dp</dimen>
+    <dimen name="profile_image_dimen_small">100dp</dimen>
+    <dimen name="pages_icon_image">200dp</dimen>
+    <dimen name="font_size1">28sp</dimen>
+    <dimen name="font_size2">20sp</dimen>
+    <dimen name="font_size3">16sp</dimen>
+    <dimen name="font_size4">12sp</dimen>
+    <dimen name="profileImageMarginRight">70dp</dimen>
+
+    <dimen name="menuDimen">250dp</dimen>
+    <dimen name="menuImageDimen">150dp</dimen>
+    <dimen name="menuGridMargin">10dp</dimen>
+    <dimen name="menuGridMarginTop">50dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+
+
+    <!-- botstrap dimens -->
+    <dimen name="default_padding">16dp</dimen>
+    <dimen name="micro_padding">4dp</dimen>
+    <dimen name="default_circle_size">250dp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
+    <!-- botstrap dimens -->
+
+
+    <dimen name="tab_max_width">100dp</dimen>
+</resources>

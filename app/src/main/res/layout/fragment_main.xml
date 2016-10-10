@@ -1,0 +1,49 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ariansoft.healthybaby.Fragments.mainFragment"
+    android:background="@color/background1">
+
+    <android.support.design.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context="com.ariansoft.healthybaby.Activities.main">
+
+
+            <RelativeLayout
+                android:id="@+id/list_bar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="5dp">
+
+                <GridView
+                    android:id="@+id/grid"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:listSelector="#00ffffff"
+                    android:numColumns="2"
+                    android:stretchMode="columnWidth"
+                    android:nestedScrollingEnabled="false"
+                    android:horizontalSpacing="10dp"
+                    android:verticalSpacing="10dp"
+                    android:layout_marginRight="@dimen/menuGridMargin"
+                    android:layout_marginLeft="@dimen/menuGridMargin"
+                    android:layout_marginTop="@dimen/menuGridMarginTop" />
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</FrameLayout>
